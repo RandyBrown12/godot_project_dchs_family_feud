@@ -1,0 +1,204 @@
+[gd_scene load_steps=26 format=3 uid="uid://ctl003f6436d3"]
+
+[ext_resource type="Shader" path="res://FamilyFeud.gdshader" id="1_qbfog"]
+[ext_resource type="Texture2D" uid="uid://bwpunu16ykqx7" path="res://test/0001.png" id="2_ia75s"]
+[ext_resource type="Texture2D" uid="uid://br2majph1fc0u" path="res://test/0002.png" id="3_mknwu"]
+[ext_resource type="Texture2D" uid="uid://cer07f7k80esy" path="res://test/0003.png" id="4_5l241"]
+[ext_resource type="Texture2D" uid="uid://dojr7w3tjhir7" path="res://test/0004.png" id="5_fu50c"]
+[ext_resource type="Texture2D" uid="uid://cqq5x6gbtjoun" path="res://test/0005.png" id="6_40le8"]
+[ext_resource type="Texture2D" uid="uid://dukda8yclfun6" path="res://test/0006.png" id="7_dr1yx"]
+[ext_resource type="Texture2D" uid="uid://dvwfgyacix10y" path="res://test/0007.png" id="8_lwu4l"]
+[ext_resource type="Texture2D" uid="uid://cs7qtcunm7u2w" path="res://test/0008.png" id="9_spr03"]
+[ext_resource type="Texture2D" uid="uid://dlhauar3qjg1q" path="res://test/0009.png" id="10_dcsgb"]
+[ext_resource type="Texture2D" uid="uid://mbsqvd3dpkqr" path="res://test/0010.png" id="11_l56rv"]
+[ext_resource type="Texture2D" uid="uid://hi5mtu0uj76q" path="res://test/0011.png" id="12_pe2ig"]
+[ext_resource type="Texture2D" uid="uid://2rxqi83bwc8s" path="res://test/0012.png" id="13_fv06p"]
+[ext_resource type="Texture2D" uid="uid://dd0qr18l77vq3" path="res://test/0013.png" id="14_tj31s"]
+[ext_resource type="Texture2D" uid="uid://ckyrhceg0gs01" path="res://test/0014.png" id="15_k3pfm"]
+[ext_resource type="Texture2D" uid="uid://cylsfdhwdcfhs" path="res://test/0015.png" id="16_nsa5r"]
+[ext_resource type="Texture2D" uid="uid://5ycg37miuvlo" path="res://test/0016.png" id="17_jlj3r"]
+[ext_resource type="Texture2D" uid="uid://dmrwespm6v8iu" path="res://test/0017.png" id="18_hnb0u"]
+[ext_resource type="Texture2D" uid="uid://bv478x4d2im4p" path="res://test/0018.png" id="19_801mw"]
+[ext_resource type="Texture2D" uid="uid://djtk4i5pa2jts" path="res://test/0019.png" id="20_rwsdj"]
+[ext_resource type="Texture2D" uid="uid://bub81inyg6jhy" path="res://test/0020.png" id="21_yl41c"]
+[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="22_iefea"]
+[ext_resource type="Script" path="res://Score.gd" id="22_n348r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_02t7o"]
+shader = ExtResource("1_qbfog")
+shader_parameter/key_color = Color(0, 0, 0, 0)
+shader_parameter/similarity = 0.0
+shader_parameter/smoothness = 0.0
+shader_parameter/spill = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6jqp6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ia75s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mknwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5l241")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fu50c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_40le8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dr1yx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lwu4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_spr03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dcsgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_l56rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pe2ig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_fv06p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tj31s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_k3pfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nsa5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_jlj3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hnb0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_801mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rwsdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_yl41c")
+}],
+"loop": false,
+"name": &"Left_1_1",
+"speed": 24.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Left_1_2",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Left_1_3",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Left_1_4",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(598, -460)
+zoom = Vector2(0.565, 0.565)
+
+[node name="1_1_1" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(327.444, -643.5)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+script = ExtResource("22_iefea")
+
+[node name="Score" type="Label" parent="."]
+offset_left = 39.0
+offset_top = -902.0
+offset_right = 1195.0
+offset_bottom = -750.0
+script = ExtResource("22_n348r")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 609.0
+offset_top = -711.0
+offset_right = 744.0
+offset_bottom = -148.0
+rotation = 1.57079
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(910.276, -461.968)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(330.015, -279.15)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(911.561, -278.186)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(912.846, -97.6176)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(331.3, -98.5815)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(908.991, -642.215)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_02t7o")
+position = Vector2(328.73, -462.61)
+scale = Vector2(0.321296, 0.321296)
+sprite_frames = SubResource("SpriteFrames_6jqp6")
+animation = &"Left_1_1"
+frame = 10
+frame_progress = 0.692278
+
+[connection signal="pressed" from="Button" to="Score" method="_on_button_pressed"]
+[connection signal="toggled" from="Button" to="1_1_1" method="_on_button_toggled"]
+[connection signal="toggled" from="Button" to="Score" method="_on_button_toggled"]
